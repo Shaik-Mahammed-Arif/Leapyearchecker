@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Finger+Paint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(76, 11, 93) 0%, rgb(0, 0, 0) 90% );   
+         background-size: 200% 100%;
+         z-index: -1;
+    animation: moveGradient 10s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.352);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.251);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Caveat", cursive;
+}
+
+form {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-family: "Caveat", cursive;
+    font-size: large;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Caveat", cursive;
+    font-size: medium;
+}
+
+button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+    font-size: large;
+    color: aliceblue;
+    text-shadow: white;
+}
